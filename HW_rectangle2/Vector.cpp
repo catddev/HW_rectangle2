@@ -48,7 +48,7 @@ int Vector::size()
 	return cur_size;
 }
 
-Rectangle Vector::operator[](int index)
+Rectangle& Vector::operator[](int index) //ОБЯЗАТЕЛЬНО ПО ССЫЛКЕ чтобы можно было изменять исходное значение, а не временную копию
 {
 	return els[index];
 }

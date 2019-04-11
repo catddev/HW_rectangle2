@@ -12,6 +12,6 @@ public:
 	Vector(const Vector& obj);
 	void add(Rectangle el);
 	int size();
-	Rectangle operator[](int index);
+	Rectangle& operator[](int index); //ОБЯЗАТЕЛЬНО ПО ССЫЛКЕ чтобы можно было изменять исходное значение, а не временную копию
 	Vector operator=(const Vector & obj);
 };
